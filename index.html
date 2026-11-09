@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoodieHub</title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Caveat:wght@400..700&family=Changa+One:ital@0;1&family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Italianno&family=Kaushan+Script&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Ranchers&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-4">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">FoodieHub</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#menu"
+                >Menu</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#about"
+                >About Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <button class="btn btn-outline-success" type="submit">
+              Order Now
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero Banner -->
+    <section id="home">
+      <div class="container-fluid d-flex">
+        <div class="hero-image w-75"></div>
+        <div
+          class="hero-text p-5 mt-5 d-flex flex-column justify-content-center"
+        >
+          <h1>Delicious Food, Delivered Fresh</h1>
+          <p>
+            Have the time of your life experiencing a wide variety of tastes
+            that you have never tried before. All of them at an extremely
+            affordable price
+          </p>
+          <button type="button" class="btn btn-success w-25">
+            <a href="#menu" style="text-decoration: none; color: white">View</a>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Popular Menu Section -->
+    <section id="menu p5">
+      <div class="home-heading d-flex justify-content-center">
+        <h1>Popular Menu</h1>
+      </div>
+      <div class="row p-5 d-flex flex-wrap gap-5 w-100 justify-content-center">
+        <div class="col-lg-3">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://www.oliversmarket.com/wp-content/uploads/2025/06/American-Wagyu-Smash-Burgers-1920x1280.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">American Smash Burger</h5>
+              <p class="fst-italic">starter</p>
+              <p class="card-text">
+                Authentic American Smash Burger that will take you taste buds to
+                a land that you may or may not have been to before. Texas, where
+                this burger was first made.
+              </p>
+              <p>$14</p>
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-success"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                View Details
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">
+                        American Smash Burger
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button> 
+                    </div>
+                     <div class="modal-category ps-3">
+                      <p class="fst-italic mt-4"> main course</p>
+                    </div>
+                    <hr>
+                     <div class="modal-image">
+                      <img class="modal-img" src="https://www.oliversmarket.com/wp-content/uploads/2025/06/American-Wagyu-Smash-Burgers-1920x1280.jpg" alt="">
+                    </div>
+                    <div class="modal-body">
+                      Authentic American Smash Burger that will take you taste
+                      buds to a land that you may or may not have been to
+                      before. Texas, where this burger was first made.
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Save changes
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://media-assets.swiggy.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/vq0sjdgflroklkubxn9j"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Juicy Lucy</h5>
+              <p class="fst-italic">main course</p>
+              <p class="card-text">
+                A classic alternative where the cheese is stuffed inside the
+                center of the patty rather than melted on top, delivering a
+                molten pocket of cheese with every bite.
+              </p>
+              <p>$12</p>
+              <a href="#" class="btn btn-success">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyRyjpyZFbxQ8_t5nb5HNnBQS8JOZjMNgWxxJyOUfe8jvtacdlTi7PiZk&s=10"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Philly Cheesesteak</h5>
+              <p class="fst-italic">starter</p>
+              <p class="card-text">
+                Thinly sliced, griddle-seared beef cooked down with onions and
+                topped with melted cheese, sharing the same savory, high-heat
+                flat-top appeal.
+              </p>
+              <p>$11</p>
+              <a href="#" class="btn btn-success">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5HoRA4mDYUaV8SV26XU2OFjWH-Tl8aIwyVJvV6ywlHxjuHys32fpnaL0&s=10"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Birria or Smash Quesadillas</h5>
+              <p class="fst-italic">starter</p>
+              <p class="card-text">
+                Tortillas and cheese pressed down hard on a hot flat-top grill
+                until the cheese forms a crispy, lacy exterior skirt.
+              </p>
+              <p>$20</p>
+              <a href="#" class="btn btn-success">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://www.oliversmarket.com/wp-content/uploads/2025/06/American-Wagyu-Smash-Burgers-1920x1280.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Lamb or Mutton Seekh Kebab Burgers:</h5>
+              <p class="fst-italic">starter</p>
+              <p class="card-text">
+                Authentic American Smash Burger that will take you taste buds to
+                a land that you may or may not have been to before. Texas, where
+                this burger was first made.
+              </p>
+              <p>$14</p>
+              <a href="#" class="btn btn-success">View Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDOqr18MCovpLNrAF6tuf7wZKxgia2MsSAUnb-mwlZMTCwGMP14NPma4Lp&s=10"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Choco Lava Cake</h5>
+              <p class="fst-italic">Dessert</p>
+              <p class="card-text">
+                Its a delicious cake which has a molten chocolate part inside
+                that will surely surprise you.
+              </p>
+              <p>$6</p>
+              <a href="#" class="btn btn-success">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"
+  ></script>
+</html>

@@ -1,0 +1,13 @@
+#home{
+    background: url(https://www.pinterest.com/pin/781163497858413509/);
+}
+
+.card-img-top{
+    height: 200px;
+}
+
+.modal-img{
+    margin-left: 150px;
+    height: 200px;
+    width: 200px;
+}
